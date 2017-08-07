@@ -37,6 +37,6 @@ public class testController {
     @RequestMapping("/helloHtml")
     public String helloHtml(Map<String,Object> map){
         map.put("hello","from TemplateController.helloHtml");
-        return "index";
+        return "hello";
     }
 }
