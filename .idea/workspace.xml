@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="498d6fba-2fe0-4a72-a06e-e2196e66bb40" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/images/slid00.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/images/slid01.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/css/fan.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/top/itfan/test/testController.class" afterPath="$PROJECT_DIR$/target/classes/top/itfan/test/testController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.log" afterPath="$PROJECT_DIR$/log.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/top/itfan/test/testController.java" afterPath="$PROJECT_DIR$/src/main/java/top/itfan/test/testController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/index.html" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" />
     </list>
     <ignored path="fan_video.iws" />
@@ -731,12 +724,20 @@
       <workItem from="1502097864719" duration="777000" />
       <workItem from="1502104014277" duration="1234000" />
       <workItem from="1502110127899" duration="6595000" />
-      <workItem from="1502155659403" duration="16901000" />
+      <workItem from="1502155659403" duration="16940000" />
     </task>
+    <task id="LOCAL-00001" summary="page">
+      <created>1502178419763</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1502178419763</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47663000" />
+    <option name="totallyTimeSpent" value="47702000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="754" extended-state="0" />
@@ -822,6 +823,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="page" />
+    <option name="LAST_COMMIT_MESSAGE" value="page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
