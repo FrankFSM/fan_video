@@ -56,7 +56,7 @@ mybatis:
 logging:
   file: log.log
   level:
-    top.itfan.*.*: debug
+    top.itfan.*.*: DEBUG, didifile
 
 
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+  <!-- Site Properties -->
+
+  <!--<script src="/js/video.js"></script>-->
+  <!--<script>-->
+  <!--videojs.options.flash.swf = "/js/video-js.swf";-->
+  <!--</script>-->
+  <script src="https://cdn.bootcss.com/video.js/6.2.5/video.js"/>
+</head>
+
+<body>
+
+<!--<script src="https://cdn.jsdelivr.net/hls.js/latest/hls.min.js"></script>-->
+<script src="https://cdn.bootcss.com/hls.js/0.7.11/hls.min.js"></script>
+<video id="video" autoplay="autoplay" controls="controls"></video>
+<input id="url" type="hidden" th:value="${video.realUrl}"/>
+<script>
+  if (Hls.isSupported()) {
+    var url = document.getElementById('url').value;
+    console.log(url);
+    var video = document.getElementById('video');
+    var hls = new Hls();
+    hls.loadSource(url);
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED, function () {
+      video.play();
+    });
+  }
+</script>
+
+</body>
+
+</html>
