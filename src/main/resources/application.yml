@@ -17,7 +17,7 @@ spring:
 
   redis:
     database : 0
-    host : 47.93.196.193
+    host : www.itfan.top
     port : 6379
     password :
     pool:
@@ -52,11 +52,6 @@ mybatis:
   type-aliases-package: com.ralap.bean
   configuration.map-underscore-to-camel-case: true
 
-#log4j2
-logging:
-  file: log.log
-  level:
-    top.itfan.*.*: DEBUG, didifile
 
 
 

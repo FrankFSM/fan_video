@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>top.itfan</groupId>
   <artifactId>fan-video</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>fan-video Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -15,7 +15,13 @@
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>1.5.4.RELEASE</version>
   </parent>
+
   <properties>
+    <java.version>1.8</java.version>
+    <!--解决thymeleaf必须严格匹配的问题-->
+    <thymeleaf.version>3.0.0.RELEASE</thymeleaf.version>
+    <thymeleaf-layout-dialect.version>2.0.0</thymeleaf-layout-dialect.version>
+
     <java.version>1.8</java.version>
   </properties>
 
@@ -30,6 +36,12 @@
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-starter-tomcat</artifactId>
         </exclusion>
+
+        <exclusion>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-logging</artifactId>
+        </exclusion>
+
       </exclusions>
     </dependency>
 
@@ -119,10 +131,19 @@
       <version>2.6.3</version>
     </dependency>
 
+    <!-- 日志 Log4j2 -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-log4j2</artifactId>
     </dependency>
+
+    <!-- Log4j2 异步支持 -->
+    <dependency>
+      <groupId>com.lmax</groupId>
+      <artifactId>disruptor</artifactId>
+      <version>3.3.6</version>
+    </dependency>
+
 
     <!--模板引擎-->
     <dependency>
@@ -136,6 +157,17 @@
       <version>1.10.2</version>
     </dependency>
 
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+      <version>2.6</version>
+    </dependency>
+
+    <!-- 加上这个才能辨认到log4j2.yml文件 -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.dataformat</groupId>
+      <artifactId>jackson-dataformat-yaml</artifactId>
+    </dependency>
   </dependencies>
 
   <!--热部署-->

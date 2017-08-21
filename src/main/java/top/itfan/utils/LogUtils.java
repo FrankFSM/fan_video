@@ -11,9 +11,9 @@ import org.apache.logging.log4j.Logger;
 public class LogUtils {
 
     public static void longInfo(Logger logger, String info) {
-        logger.info("=============================================================");
-        logger.info(info);
-        logger.info("=============================================================");
+        logger.info("=============================================================\n"
+                + info + "\n"
+                + "=============================================================");
     }
 
 }

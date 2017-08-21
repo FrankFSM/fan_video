@@ -1,13 +1,12 @@
 package top.itfan.controller;
 
-import java.util.HashMap;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import top.itfan.model.Iqiyi;
+import top.itfan.source.Iqiyi;
 import top.itfan.model.Video;
 
 /**
@@ -33,7 +32,7 @@ public class AnalysisController {
             e.printStackTrace();
         }
 
-        return "/video";
+        return "video_m3u8";
     }
 
 

@@ -31,4 +31,16 @@ public class Video {
      */
     private String type;
 
+    /* [版权] 视频源地址 */
+    private String value;
+
+    /* [版权] 视频提供方 */
+    private String provider;
+
+    /* [版权] 视频解析方名称 */
+    private String parserName;
+
+    /* [版权] 视频解析方官网 */
+    private String parser;
+
 }
