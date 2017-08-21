@@ -18,6 +18,8 @@ import top.itfan.model.Video;
 @AllArgsConstructor
 public class RedisManager {
 
+
+
     private final StringRedisTemplate stringRedisTemplate;
 
     public void cacheVideos(String key, List<Video> videoList) {

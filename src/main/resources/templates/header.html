@@ -1,0 +1,30 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<!-- following menu-->
+<div class="ui fixed inverted big menu" th:fragment="fmenu">
+  <div class="ui container">
+    <a href="/" class="item">首页</a>
+    <a href="/analysis" class="item">解析</a>
+
+  </div>
+</div>
+
+
+<!-- Sidebar Menu -->
+<div class="ui vertical inverted sidebar big menu" th:fragment="smenu">
+  <a href="/" class="item">首页</a>
+  <a href="/analysis" class="item">解析</a>
+
+</div>
+
+<!-- pointing menu -->
+<div class="ui large secondary pointing menu" th:fragment="pmenu">
+
+  <a class="toc item">
+    <i class="sidebar icon"></i>
+  </a>
+  <a href="/" class="item">首页</a>
+  <a href="/analysis" class="item">解析</a>
+</div>
+</body>
+</html>
